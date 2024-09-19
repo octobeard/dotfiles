@@ -35,9 +35,53 @@ alias t="tmux"
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
+# Hide/Show desktop icons.
+
+alias hide-desktop-icons="defaults write com.apple.finder CreateDesktop -bool false \
+                            && killall Finder"
+
+alias show-desktop-icons="defaults write com.apple.finder CreateDesktop -bool true \
+                            && killall Finder"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Open from the terminal.
+
+alias o="open"
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Update applications and CLTs.
+
+alias u="sudo softwareupdate --install --all \
+            && brew update \
+            && brew upgrade \
+            && brew cleanup"
+
 # Load OS specific configs.
 
-# alias ls='ls -GFh'
+LSCOLORS=""
+
+LSCOLORS+="gx" # Directory
+LSCOLORS+="fx" # Symbolic link
+LSCOLORS+="cx" # Socket
+LSCOLORS+="dx" # Pipe
+LSCOLORS+="cx" # Executable
+LSCOLORS+="eg" # Block special
+LSCOLORS+="ed" # Character special
+LSCOLORS+="ab" # Executable with setuid bit set
+LSCOLORS+="ag" # Executable with setgid bit set
+LSCOLORS+="cc" # Directory writable to others, with sticky bit
+LSCOLORS+="bd" # Directory writable to others, without sticky bit
+
+export LSCOLORS
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+# Enable color support.
+
+alias ls="ls -GFh"
+
 alias ll="ls -la"
 alias cd..="cd .."
 alias ..="cd .."
