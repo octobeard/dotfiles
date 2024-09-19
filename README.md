@@ -43,6 +43,11 @@ Now install the dotfiles.
 | macOS | `bash -c "$(curl -LsS https://raw.github.com/octobeard/dotfiles/main/src/os/setup.sh)"` |
 | Ubuntu | `bash -c "$(wget -qO - https://raw.github.com/octobeard/dotfiles/main/src/os/setup.sh)"` |
 
+Lastly, configure p10k:
+
+`p10k configure`
+
+
 That's it! ✨
 
 The setup process will:

@@ -25,7 +25,6 @@ alias d="cd ~/Desktop"
 alias e="vim --"
 # alias g="git"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ll="ls -lA"
 alias m="man"
 alias map="xargs -n1"
 alias n="npm"
@@ -82,6 +81,7 @@ export LSCOLORS
 # Enable color support.
 
 alias ls="ls -GFh"
+alias ll="ls -lA"
 alias cd..="cd .."
 alias ..="cd .."
 alias ...="cd ../.."
