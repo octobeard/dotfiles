@@ -1,4 +1,4 @@
-# [Octobeard](https://github.com/octobeard/)’s dotfiles
+# [Octobeard][repo]’s dotfiles
 
 [![CI status for macOS][ci badge macos]][ci link macos]
 [![CI status for Ubuntu][ci badge ubuntu]][ci link ubuntu]
@@ -42,11 +42,6 @@ Now install the dotfiles.
 |:---|:---|
 | macOS | `bash -c "$(curl -LsS https://raw.github.com/octobeard/dotfiles/main/src/os/setup.sh)"` |
 | Ubuntu | `bash -c "$(wget -qO - https://raw.github.com/octobeard/dotfiles/main/src/os/setup.sh)"` |
-
-Lastly, configure p10k:
-
-`p10k configure`
-
 
 That's it! ✨
 
