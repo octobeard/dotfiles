@@ -400,9 +400,9 @@ let g:user_emmet_mode='a'
 
 " Load custom snippets.
 
-if &runtimepath =~ 'webapi-vim'
-    let g:user_emmet_settings = webapi#json#decode(join(readfile(expand("~/.vim/snippets/emmet.json")), "\n"))
-endif
+" if &runtimepath =~ 'webapi-vim'
+"    let g:user_emmet_settings = webapi#json#decode(join(readfile(expand("~/.vim/snippets/emmet.json")), "\n"))
+" endif
 
 
 " ----------------------------------------------------------------------
