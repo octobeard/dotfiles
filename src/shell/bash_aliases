@@ -81,8 +81,7 @@ export LSCOLORS
 # Enable color support.
 
 alias ls="ls -GFh"
-
-alias ll="ls -la"
+alias ll="ls -lA"
 alias cd..="cd .."
 alias ..="cd .."
 alias ...="cd ../.."

@@ -7,11 +7,11 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 
 print_in_purple "\n   Dock\n\n"
 
-execute "defaults write com.apple.dock autohide -bool true" \
-    "Automatically hide/show the Dock"
+# execute "defaults write com.apple.dock autohide -bool true" \
+#     "Automatically hide/show the Dock"
 
-execute "defaults write com.apple.dock autohide-delay -float 0" \
-    "Disable the hide Dock delay"
+# execute "defaults write com.apple.dock autohide-delay -float 0" \
+#     "Disable the hide Dock delay"
 
 execute "defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true" \
     "Enable spring loading for all Dock items"
@@ -28,8 +28,8 @@ execute "defaults write com.apple.dock launchanim -bool false" \
 execute "defaults write com.apple.dock mineffect -string 'scale'" \
     "Change minimize/maximize window effect"
 
-execute "defaults write com.apple.dock minimize-to-application -bool true" \
-    "Reduce clutter by minimizing windows into their application icons"
+# execute "defaults write com.apple.dock minimize-to-application -bool true" \
+#     "Reduce clutter by minimizing windows into their application icons"
 
 execute "defaults write com.apple.dock mru-spaces -bool false" \
     "Do not automatically rearrange spaces based on most recent use"

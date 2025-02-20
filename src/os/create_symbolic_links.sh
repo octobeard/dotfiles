@@ -23,7 +23,6 @@ create_symlinks() {
         "shell/inputrc"
         "shell/p10k.zsh"
         "shell/zshrc"
-
         "git/gitattributes"
         "git/gitconfig"
         "git/gitignore"

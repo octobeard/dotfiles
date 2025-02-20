@@ -344,7 +344,6 @@ function! InitPlugins() abort
     call minpac#add('ap/vim-css-color')
     call minpac#add('chrisbra/unicode.vim')
     call minpac#add('chrisbra/vim-xml-runtime')
-    call minpac#add('editorconfig/editorconfig-vim')
     call minpac#add('godlygeek/tabular')
     call minpac#add('isRuslan/vim-es6')
     call minpac#add('jelera/vim-javascript-syntax')
@@ -401,9 +400,9 @@ let g:user_emmet_mode='a'
 
 " Load custom snippets.
 
-if &runtimepath =~ 'webapi-vim'
-    let g:user_emmet_settings = webapi#json#decode(join(readfile(expand("~/.vim/snippets/emmet.json")), "\n"))
-endif
+" if &runtimepath =~ 'webapi-vim'
+"    let g:user_emmet_settings = webapi#json#decode(join(readfile(expand("~/.vim/snippets/emmet.json")), "\n"))
+" endif
 
 
 " ----------------------------------------------------------------------
@@ -755,7 +754,10 @@ map <leader>gd :SignifyToggle<cr>
 " [,ffu] Convert file to use Unix line endings.
 " See also: https://vim.fandom.com/wiki/File_format
 
-map <leader>ffu :edit ++fileformat=dos <bar> :setlocal fileformat=unix <bar> :write!<cr><cr>
+map <leader>ffu :edit ++fileformat=dos
+        \ <bar> :setlocal fileformat=unix
+        \ <bar> :write! ++encoding=utf-8 <cr><cr>
+        \ <bar> :edit! <cr><cr>
 
 " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
