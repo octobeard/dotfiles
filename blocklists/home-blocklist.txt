@@ -1,0 +1,4 @@
+# Custom filter for blocking unnecessary requests not found in blocklists online
+
+127.0.0.1 app-updates.agilebits.com
+127.0.0.1 app-updates-internal.agilebits.com
