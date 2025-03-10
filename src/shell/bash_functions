@@ -437,3 +437,8 @@ function runpde()
     EXEC_PATH="$(pwd)"
     processing-java --sketch="$EXEC_PATH" --output="$EXEC_PATH"/build-temp --force --run
 }
+
+function fdelete()
+{
+    find . -iname "$1" -print0 | xargs -0 -I {} rm {}
+}
