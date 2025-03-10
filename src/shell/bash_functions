@@ -389,7 +389,7 @@ function up()
 {
   git fetch upstream
   STASH_OUTPUT="$(git stash)"
-  git rebase "$1" upstream/master
+  git rebase "$1" upstream/main
   if [ "$STASH_OUTPUT" != "No local changes to save" ]; then
     git stash pop
   fi
@@ -400,7 +400,7 @@ function oup()
 {
   git fetch origin
   STASH_OUTPUT="$(git stash)"
-  git rebase "$1" origin/master
+  git rebase "$1" origin/main
   if [ "$STASH_OUTPUT" != "No local changes to save" ]; then
     git stash pop
   fi
@@ -411,7 +411,7 @@ function upi()
 {
   git fetch upstream
   STASH_OUTPUT="$(git stash)"
-  git rebase "$1" upstream/master -i
+  git rebase "$1" upstream/main -i
   if [ "$STASH_OUTPUT" != "No local changes to save" ]; then
     git stash pop
   fi
